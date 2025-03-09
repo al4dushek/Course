@@ -10,15 +10,19 @@ body {
 .title {
     margin: 0;
     font-size: 2.5em;
-    word-wrap: break-word;
-    overflow-wrap: break-word;
-    hyphens: auto;
-    word-break: break-all;
-    min-width: 0;
+    color: white;
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: center;
     gap: 10px;
+    text-align: center;
+}
+
+.title span.dash {
+    white-space: pre-wrap; /* Pozwala na kontrolowany przełom linii */
+    display: inline-block; /* Zachowuje szerokość znaku */
+    margin: 0 5px; /* Odstęp po obu stronach "–" */
 }
 
 header {
