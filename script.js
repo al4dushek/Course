@@ -2,7 +2,7 @@ function checkAnswers(event) {
     event.preventDefault();
 
     const correctAnswers = {
-        q1: 'd',  // HyperText Markup Language
+        q1: 'a',  // HyperText Markup Language
         q2: 'a',  // <h1>
         q3: 'b',  // <link rel="stylesheet" href="styles.css">
         q4: 'c',  // Wyświetla okno z komunikatem
