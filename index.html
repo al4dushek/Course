@@ -9,7 +9,7 @@
 </head>
 <body>
     <header>
-        <h1>Kurs: Wprowadzenie do HTML, CSS i JavaScript – podstawowe technologie webowe<i class="fas fa-laptop-code"></i></h1>
+        <h1>Kurs: Wprowadzenie do HTML, CSS i JavaScript – podstawowe technologie webowe <i class="fas fa-laptop-code"></i></h1>
         <nav>
             <a href="#intro">Wprowadzenie <i class="fas fa-home"></i></a> | 
             <a href="#html">HTML <i class="fab fa-html5"></i></a> | 
@@ -34,17 +34,17 @@
         <h2>HTML: Struktura strony <i class="fab fa-html5"></i></h2>
         <p>HTML (HyperText Markup Language) to język znaczników do tworzenia stron internetowych. Używa znaczników, na przykład:</p>
         <pre class="code-block">
-&lt;!DOCTYPE html&gt;
-&lt;html lang="pl"&gt;
-&lt;head&gt;
-    &lt;title&gt;Moja strona&lt;/title&gt;
-&lt;/head&gt;
-&lt;body&gt;
-    &lt;h1&gt;Witaj, świecie!&lt;/h1&gt;
-&lt;/body&gt;
-&lt;/html&gt;
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <title>Moja strona</title>
+</head>
+<body>
+    <h1>Witaj, świecie!</h1>
+</body>
+</html>
         </pre>
-        <p>Podstawowe znaczniki: <code>&lt;h1&gt;</code> dla nagłówków, <code>&lt;p&gt;</code> dla akapitów, <code>&lt;a&gt;</code> dla linków.</p>
+        <p>Podstawowe znaczniki: <code><h1></code> dla nagłówków, <code><p></code> dla akapitów, <code><a></code> dla linków.</p>
     </section>
 
     <section id="css">
@@ -56,7 +56,7 @@ h1 {
     font-size: 24px;
 }
         </pre>
-        <p>Podłączanie CSS: przez <code>&lt;link rel="stylesheet" href="styles.css"&gt;</code>.</p>
+        <p>Podłączanie CSS: przez <code><link rel="stylesheet" href="styles.css"></code>.</p>
     </section>
 
     <section id="js">
@@ -68,6 +68,7 @@ function powitanie() {
 }
         </pre>
         <p>Służy do manipulacji DOM, obsługi zdarzeń i wiele więcej.</p>
+        <button onclick="showTestOnly()" class="jump-btn">Przejdź do testu <i class="fas fa-arrow-right"></i></button>
     </section>
 
     <section id="test">
@@ -83,18 +84,18 @@ function powitanie() {
 
             <div class="question">
                 <h3>2. Który znacznik tworzy nagłówek?</h3>
-                <label><input type="radio" name="q2" value="a"> a) &lt;p&gt;</label><br>
-                <label><input type="radio" name="q2" value="b"> b) &lt;h1&gt;</label><br>
-                <label><input type="radio" name="q2" value="c"> c) &lt;div&gt;</label><br>
-                <label><input type="radio" name="q2" value="d"> d) &lt;span&gt;</label>
+                <label><input type="radio" name="q2" value="a"> a) <p></label><br>
+                <label><input type="radio" name="q2" value="b"> b) <h1></label><br>
+                <label><input type="radio" name="q2" value="c"> c) <div></label><br>
+                <label><input type="radio" name="q2" value="d"> d) <span></label>
             </div>
 
             <div class="question">
                 <h3>3. Jak podłączyć zewnętrzny plik CSS?</h3>
-                <label><input type="radio" name="q3" value="a"> a) &lt;style src="styles.css"&gt;</label><br>
-                <label><input type="radio" name="q3" value="b"> b) &lt;link rel="stylesheet" href="styles.css"&gt;</label><br>
-                <label><input type="radio" name="q3" value="c"> c) &lt;css href="styles.css"&gt;</label><br>
-                <label><input type="radio" name="q3" value="d"> d) &lt;script src="styles.css"&gt;</label>
+                <label><input type="radio" name="q3" value="a"> a) <style src="styles.css"></label><br>
+                <label><input type="radio" name="q3" value="b"> b) <link rel="stylesheet" href="styles.css"></label><br>
+                <label><input type="radio" name="q3" value="c"> c) <css href="styles.css"></label><br>
+                <label><input type="radio" name="q3" value="d"> d) <script src="styles.css"></label>
             </div>
 
             <div class="question">
@@ -110,7 +111,7 @@ function powitanie() {
                 <label><input type="radio" name="q5" value="a"> a) #intro</label><br>
                 <label><input type="radio" name="q5" value="b"> b) .intro</label><br>
                 <label><input type="radio" name="q5" value="c"> c) intro</label><br>
-                <label><input type="radio" name="q5" value="d"> d) &lt;intro&gt;</label>
+                <label><input type="radio" name="q5" value="d"> d) <intro></label>
             </div>
 
             <div class="question">
@@ -139,10 +140,10 @@ function powitanie() {
 
             <div class="question">
                 <h3>9. Który znacznik służy do listy nieuporządkowanej?</h3>
-                <label><input type="radio" name="q9" value="a"> a) &lt;ol&gt;</label><br>
-                <label><input type="radio" name="q9" value="b"> b) &lt;ul&gt;</label><br>
-                <label><input type="radio" name="q9" value="c"> c) &lt;li&gt;</label><br>
-                <label><input type="radio" name="q9" value="d"> d) &lt;dl&gt;</label>
+                <label><input type="radio" name="q9" value="a"> a) <ol></label><br>
+                <label><input type="radio" name="q9" value="b"> b) <ul></label><br>
+                <label><input type="radio" name="q9" value="c"> c) <li></label><br>
+                <label><input type="radio" name="q9" value="d"> d) <dl></label>
             </div>
 
             <div class="question">
