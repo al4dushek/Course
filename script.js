@@ -1,47 +1,49 @@
-document.addEventListener('DOMContentLoaded', function () {
-    console.log('DOM w pełni załadowany, skrypt działa.');
-
-    window.showTestOnly = function () {
-        console.log('Funkcja showTestOnly została wywołana.');
-        const sections = document.querySelectorAll('section');
-        if (sections.length === 0) {
-            console.error('Nie znaleziono żadnych sekcji!');
-            return;
-        }
-        sections.forEach(section => {
-            if (section.id !== 'test') {
-                section.style.display = 'none';
-            } else {
-                section.style.display = 'block';
-            }
-        });
-        const testSection = document.getElementById('test');
-        if (testSection) {
-            testSection.scrollIntoView({ behavior: 'smooth' });
+// Определяем функцию глобально, вне DOMContentLoaded
+function showTestOnly() {
+    console.log('Функция showTestOnly была вызвана.');
+    const sections = document.querySelectorAll('section');
+    if (sections.length === 0) {
+        console.error('Не найдено ни одной секции!');
+        return;
+    }
+    sections.forEach(section => {
+        if (section.id !== 'test') {
+            section.style.display = 'none';
         } else {
-            console.error('Sekcja #test nie została znaleziona!');
+            section.style.display = 'block';
         }
-    };
+    });
+    const testSection = document.getElementById('test');
+    if (testSection) {
+        testSection.scrollIntoView({ behavior: 'smooth' });
+    } else {
+        console.error('Секция #test не найдена!');
+    }
+}
 
-    window.goToMain = function () {
-        console.log('Przeładowanie strony – powrót na główną.');
-        location.reload(); // Przeładowanie strony
-    };
+// Определяем функцию возврата на главную глобально
+function goToMain() {
+    console.log('Перезагрузка страницы – возврат на главную.');
+    location.reload();
+}
+
+document.addEventListener('DOMContentLoaded', function () {
+    console.log('DOM полностью загружен, скрипт работает.');
 
     function checkAnswers(event) {
         event.preventDefault();
 
         const correctAnswers = {
-            q1: 'a', // Poprawna odpowiedź: HyperText Markup Language
-            q2: 'b', // Poprawna odpowiedź: <h1>
-            q3: 'c', // Poprawna odpowiedź: <link rel="stylesheet" href="styles.css">
-            q4: 'd', // Poprawna odpowiedź: Wyświetla okno z komunikatem
-            q5: 'b', // Poprawna odpowiedź: .intro
-            q6: 'a', // Poprawna odpowiedź: Ustawia zewnętrzne odstępy
-            q7: 'c', // Poprawna odpowiedź: let x = 10
-            q8: 'c', // Poprawna odpowiedź: Znajduje element po ID
-            q9: 'a', // Poprawna odpowiedź: <ul>
-            q10: 'b' // Poprawna odpowiedź: Styl zmieni się po najechaniu myszą
+            q1: 'a',
+            q2: 'b',
+            q3: 'c',
+            q4: 'd',
+            q5: 'b',
+            q6: 'a',
+            q7: 'c',
+            q8: 'c',
+            q9: 'a',
+            q10: 'b'
         };
 
         let score = 0;
@@ -55,14 +57,20 @@ document.addEventListener('DOMContentLoaded', function () {
         }
 
         const resultDiv = document.getElementById('result');
-        resultDiv.innerHTML = `Twój wynik: ${score} z ${totalQuestions}. ${score >= 7 ? 'Świetnie!' : 'Spróbuj jeszcze raz!'}`;
+        resultDiv.innerHTML = `Твой результат: ${score} из ${totalQuestions}. ${score >= 7 ? 'Отлично!' : 'Попробуй еще раз!'}`;
     }
 
-    // Podłącz funkcję checkAnswers do formularza
+    // Подключаем функцию checkAnswers к форме
     const quizForm = document.getElementById('quizForm');
     if (quizForm) {
         quizForm.addEventListener('submit', checkAnswers);
     } else {
-        console.error('Formularz #quizForm nie został znaleziony!');
+        console.error('Форма #quizForm не найдена!');
+    }
+
+    // Добавляем обработчик события для кнопки теста (альтернативный способ)
+    const testButton = document.querySelector('.jump-btn');
+    if (testButton) {
+        testButton.addEventListener('click', showTestOnly);
     }
 });
