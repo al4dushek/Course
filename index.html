@@ -9,7 +9,7 @@
 </head>
 <body>
     <header>
-        <h1>Kurs: Wprowadzenie do HTML, CSS i JavaScript             – podstawowe technologie webowe <i class="fas fa-laptop-code"></i></h1>
+        <h1>Kurs: Wprowadzenie do HTML, CSS i JavaScript – podstawowe technologie webowe <i class="fas fa-laptop-code"></i></h1>
         <nav>
             <a href="#intro">Wprowadzenie <i class="fas fa-home"></i></a> | 
             <a href="#html">HTML <i class="fab fa-html5"></i></a> | 
@@ -34,17 +34,17 @@
         <h2>HTML: Struktura strony <i class="fab fa-html5"></i></h2>
         <p>HTML (HyperText Markup Language) to język znaczników do tworzenia stron internetowych. Używa znaczników, na przykład:</p>
         <pre class="code-block">
-&lt;!DOCTYPE html&gt;
-&lt;html lang="pl"&gt;
-&lt;head&gt;
-    &lt;title&gt;Moja strona&lt;/title&gt;
-&lt;/head&gt;
-&lt;body&gt;
-    &lt;h1&gt;Witaj, świecie!&lt;/h1&gt;
-&lt;/body&gt;
-&lt;/html&gt;
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <title>Moja strona</title>
+</head>
+<body>
+    <h1>Witaj, świecie!</h1>
+</body>
+</html>
         </pre>
-        <p>Podstawowe znaczniki: <code>&lt;h1&gt;</code> dla nagłówków, <code>&lt;p&gt;</code> dla akapitów, <code>&lt;a&gt;</code> dla linków.</p>
+        <p>Podstawowe znaczniki: <code><h1></code> dla nagłówków, <code><p></code> dla akapitów, <code><a></code> dla linków.</p>
     </section>
 
     <section id="css">
@@ -56,7 +56,7 @@ h1 {
     font-size: 24px;
 }
         </pre>
-        <p>Podłączanie CSS: przez <code>&lt;link rel="stylesheet" href="styles.css"&gt;</code>.</p>
+        <p>Podłączanie CSS: przez <code><link rel="stylesheet" href="styles.css"></code>.</p>
     </section>
 
     <section id="js">
@@ -76,26 +76,26 @@ function powitanie() {
         <form id="quizForm" onsubmit="checkAnswers(event)">
             <div class="question">
                 <h3>1. Co oznacza skrót HTML?</h3>
-                <label><input type="radio" name="q1" value="a"> a) HighText Machine Language</label><br>
-                <label><input type="radio" name="q1" value="b"> b) HyperTool Markup Language</label><br>
-                <label><input type="radio" name="q1" value="c"> c) HomeText Markup Language</label><br>
-                <label><input type="radio" name="q1" value="d"> d) HyperText Markup Language</label> <!-- Poprawna odpowiedź -->
+                <label><input type="radio" name="q1" value="a"> a) HyperText Markup Language</label><br> <!-- Poprawna odpowiedź -->
+                <label><input type="radio" name="q1" value="b"> b) HighText Machine Language</label><br>
+                <label><input type="radio" name="q1" value="c"> c) HyperTool Markup Language</label><br>
+                <label><input type="radio" name="q1" value="d"> d) HomeText Markup Language</label>
             </div>
 
             <div class="question">
                 <h3>2. Który znacznik tworzy nagłówek?</h3>
-                <label><input type="radio" name="q2" value="a"> a) &lt;div&gt;</label><br>
-                <label><input type="radio" name="q2" value="b"> b) &lt;span&gt;</label><br>
-                <label><input type="radio" name="q2" value="c"> c) &lt;p&gt;</label><br>
-                <label><input type="radio" name="q2" value="d"> d) &lt;h1&gt;</label> <!-- Poprawna odpowiedź -->
+                <label><input type="radio" name="q2" value="a"> a) <div></label><br>
+                <label><input type="radio" name="q2" value="b"> b) <h1></label><br> <!-- Poprawna odpowiedź -->
+                <label><input type="radio" name="q2" value="c"> c) <span></label><br>
+                <label><input type="radio" name="q2" value="d"> d) <p></label>
             </div>
 
             <div class="question">
                 <h3>3. Jak podłączyć zewnętrzny plik CSS?</h3>
-                <label><input type="radio" name="q3" value="a"> a) &lt;css href="styles.css"&gt;</label><br>
-                <label><input type="radio" name="q3" value="b"> b) &lt;style src="styles.css"&gt;</label><br>
-                <label><input type="radio" name="q3" value="c"> c) &lt;script src="styles.css"&gt;</label><br>
-                <label><input type="radio" name="q3" value="d"> d) &lt;link rel="stylesheet" href="styles.css"&gt;</label> <!-- Poprawna odpowiedź -->
+                <label><input type="radio" name="q3" value="a"> a) <style src="styles.css"></label><br>
+                <label><input type="radio" name="q3" value="b"> b) <script src="styles.css"></label><br>
+                <label><input type="radio" name="q3" value="c"> c) <link rel="stylesheet" href="styles.css"></label><br> <!-- Poprawna odpowiedź -->
+                <label><input type="radio" name="q3" value="d"> d) <css href="styles.css"></label>
             </div>
 
             <div class="question">
@@ -108,50 +108,50 @@ function powitanie() {
 
             <div class="question">
                 <h3>5. Który selektor stylizuje element z klasą "intro"?</h3>
-                <label><input type="radio" name="q5" value="a"> a) &lt;intro&gt;</label><br>
-                <label><input type="radio" name="q5" value="b"> b) intro</label><br>
-                <label><input type="radio" name="q5" value="c"> c) #intro</label><br>
-                <label><input type="radio" name="q5" value="d"> d) .intro</label> <!-- Poprawna odpowiedź -->
+                <label><input type="radio" name="q5" value="a"> a) #intro</label><br>
+                <label><input type="radio" name="q5" value="b"> b) .intro</label><br> <!-- Poprawna odpowiedź -->
+                <label><input type="radio" name="q5" value="c"> c) <intro></label><br>
+                <label><input type="radio" name="q5" value="d"> d) intro</label>
             </div>
 
             <div class="question">
                 <h3>6. Co robi właściwość margin w CSS?</h3>
-                <label><input type="radio" name="q6" value="a"> a) Zmienia czcionkę</label><br>
-                <label><input type="radio" name="q6" value="b"> b) Dodaje wewnętrzne odstępy</label><br>
-                <label><input type="radio" name="q6" value="c"> c) Zmienia kolor tekstu</label><br>
-                <label><input type="radio" name="q6" value="d"> d) Ustawia zewnętrzne odstępy</label> <!-- Poprawna odpowiedź -->
+                <label><input type="radio" name="q6" value="a"> a) Ustawia zewnętrzne odstępy</label><br> <!-- Poprawna odpowiedź -->
+                <label><input type="radio" name="q6" value="b"> b) Zmienia czcionkę</label><br>
+                <label><input type="radio" name="q6" value="c"> c) Dodaje wewnętrzne odstępy</label><br>
+                <label><input type="radio" name="q6" value="d"> d) Zmienia kolor tekstu</label>
             </div>
 
             <div class="question">
                 <h3>7. Jak zadeklarować zmienną w JavaScript?</h3>
-                <label><input type="radio" name="q7" value="a"> a) x = 10</label><br>
-                <label><input type="radio" name="q7" value="b"> b) const x = 10</label><br>
-                <label><input type="radio" name="q7" value="c"> c) variable x = 10</label><br>
-                <label><input type="radio" name="q7" value="d"> d) let x = 10</label> <!-- Poprawna odpowiedź -->
+                <label><input type="radio" name="q7" value="a"> a) variable x = 10</label><br>
+                <label><input type="radio" name="q7" value="b"> b) x = 10</label><br>
+                <label><input type="radio" name="q7" value="c"> c) let x = 10</label><br> <!-- Poprawna odpowiedź -->
+                <label><input type="radio" name="q7" value="d"> d) const x = 10</label>
             </div>
 
             <div class="question">
                 <h3>8. Co robi document.getElementById()?</h3>
                 <label><input type="radio" name="q8" value="a"> a) Tworzy nowy element</label><br>
                 <label><input type="radio" name="q8" value="b"> b) Zmienia styl</label><br>
-                <label><input type="radio" name="q8" value="c"> c) Usuwa element</label><br>
-                <label><input type="radio" name="q8" value="d"> d) Znajduje element po ID</label> <!-- Poprawna odpowiedź -->
+                <label><input type="radio" name="q8" value="c"> c) Znajduje element po ID</label><br> <!-- Poprawna odpowiedź -->
+                <label><input type="radio" name="q8" value="d"> d) Usuwa element</label>
             </div>
 
             <div class="question">
                 <h3>9. Który znacznik służy do listy nieuporządkowanej?</h3>
-                <label><input type="radio" name="q9" value="a"> a) &lt;li&gt;</label><br>
-                <label><input type="radio" name="q9" value="b"> b) &lt;dl&gt;</label><br>
-                <label><input type="radio" name="q9" value="c"> c) &lt;ol&gt;</label><br>
-                <label><input type="radio" name="q9" value="d"> d) &lt;ul&gt;</label> <!-- Poprawna odpowiedź -->
+                <label><input type="radio" name="q9" value="a"> a) <ul></label><br> <!-- Poprawna odpowiedź -->
+                <label><input type="radio" name="q9" value="b"> b) <li></label><br>
+                <label><input type="radio" name="q9" value="c"> c) <dl></label><br>
+                <label><input type="radio" name="q9" value="d"> d) <ol></label>
             </div>
 
             <div class="question">
                 <h3>10. Co się stanie przy użyciu :hover w CSS?</h3>
-                <label><input type="radio" name="q10" value="a"> a) Styl zmieni się po załadowaniu</label><br>
-                <label><input type="radio" name="q10" value="b"> b) Styl się nie zmieni</label><br>
-                <label><input type="radio" name="q10" value="c"> c) Styl zmieni się po kliknięciu</label><br>
-                <label><input type="radio" name="q10" value="d"> d) Styl zmieni się po najechaniu myszą</label> <!-- Poprawna odpowiedź -->
+                <label><input type="radio" name="q10" value="a"> a) Styl zmieni się po kliknięciu</label><br>
+                <label><input type="radio" name="q10" value="b"> b) Styl zmieni się po najechaniu myszą</label><br> <!-- Poprawna odpowiedź -->
+                <label><input type="radio" name="q10" value="c"> c) Styl zmieni się po załadowaniu</label><br>
+                <label><input type="radio" name="q10" value="d"> d) Styl się nie zmieni</label>
             </div>
 
             <button type="submit" class="submit-btn">Sprawdź odpowiedzi <i class="fas fa-check-circle"></i></button>
