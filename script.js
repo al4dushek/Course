@@ -1,3 +1,7 @@
+window.goToMain = function () {
+    console.log('Przeładowanie strony – powrót na główną.');
+    location.reload();
+};
 function checkAnswers(event) {
     event.preventDefault();
 
