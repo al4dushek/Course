@@ -1,13 +1,24 @@
 body {
     font-family: Arial, sans-serif;
-    text-align: center;
+    margin: 0;
     padding: 20px;
+    line-height: 1.6;
 }
-
-button {
+header, footer {
+    text-align: center;
     padding: 10px;
-    background-color: #4CAF50;
-    color: white;
-    border: none;
-    cursor: pointer;
+    background-color: #f4f4f4;
+}
+nav a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: #0066cc;
+}
+nav a:hover {
+    color: #003366;
+}
+section {
+    margin: 20px 0;
+    padding: 15px;
+    border: 1px solid #ddd;
 }
