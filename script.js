@@ -23,6 +23,11 @@ document.addEventListener('DOMContentLoaded', function () {
         }
     };
 
+    window.goToMain = function () {
+        console.log('Przeładowanie strony – powrót na główną.');
+        location.reload(); // Przeładowanie strony
+    };
+
     function checkAnswers(event) {
         event.preventDefault();
 
