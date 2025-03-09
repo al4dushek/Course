@@ -29,6 +29,15 @@ function checkAnswers(event) {
     <p>Twój wynik: ${score} z ${totalQuestions}. ${score >= 7 ? 'Świetnie!' : 'Spróbuj jeszcze raz!'}</p>
     <button class="return-btn">Wróć na główną stronę <i class="fas fa-home"></i></button>
 `;
+    const returnButton = resultDiv.querySelector('.return-btn');
+        if (returnButton) {
+            returnButton.addEventListener('click', function (event) {
+                event.preventDefault(); // Zapobiega domyślnej akcji submit
+                goToMain();
+            });
+        } else {
+            console.error('Przycisk .return-btn nie został znaleziony po dynamicznym dodaniu!');
+        }
 }
 
 function showTestOnly() {
