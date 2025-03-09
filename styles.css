@@ -39,7 +39,7 @@ section {
     background: white;
     border-radius: 10px;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
-    display: block; /* Upewniamy się, że sekcje są widoczne domyślnie */
+    display: block; /* Domyślnie widoczne, ale test jest ukryty inline */
 }
 
 section h2 {
