@@ -73,7 +73,7 @@ document.addEventListener('DOMContentLoaded', function () {
         } else {
             console.error('Przycisk .return-btn nie został znaleziony po dynamicznym dodaniu!');
         }
-    }
+    
 
 function showTestOnly() {
     const sections = document.querySelectorAll('section');
@@ -87,3 +87,4 @@ function showTestOnly() {
     // Przewiń do sekcji testu
     document.getElementById('test').scrollIntoView({ behavior: 'smooth' });
 }
+    }
