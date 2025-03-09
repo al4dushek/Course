@@ -119,7 +119,7 @@ input[type="radio"] {
     display: flex;
     align-items: center;
     gap: 5px;
-    margin: 30px auto; /* Zwiększony margines dla większego odstępu */
+    margin: 30px auto;
 }
 
 .submit-btn:hover {
@@ -143,6 +143,25 @@ input[type="radio"] {
 
 .jump-btn:hover {
     background: #2980b9;
+}
+
+.return-btn {
+    background: #e74c3c;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background 0.3s;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin: 30px auto;
+}
+
+.return-btn:hover {
+    background: #c0392b;
 }
 
 #result {
@@ -188,9 +207,9 @@ footer a:hover {
     .question {
         padding: 10px;
     }
-    .jump-btn, .submit-btn {
+    .jump-btn, .submit-btn, .return-btn {
         width: 100%;
         text-align: center;
-        margin: 20px auto; /* Dostosowany margines dla mniejszych ekranów */
+        margin: 20px auto;
     }
 }
