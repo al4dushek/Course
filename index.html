@@ -1,41 +1,146 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="pl">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Курс: HTML, CSS и JavaScript для начинающих</title>
-    <link rel="stylesheet" href="/assets/styles.css">
+    <title>Kurs: Podstawy HTML, CSS i JavaScript</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
-        <h1>Курс: Основы веб-разработки</h1>
+        <h1>Kurs: Podstawy tworzenia stron internetowych (HTML, CSS, JavaScript)</h1>
         <nav>
-            <a href="#intro">Введение</a> | 
+            <a href="#intro">Wprowadzenie</a> | 
             <a href="#html">HTML</a> | 
             <a href="#css">CSS</a> | 
             <a href="#js">JavaScript</a> | 
-            <a href="#example">Пример</a> | 
-            <a href="#exercise">Упражнение</a> | 
-            <a href="#test">Тест</a>
+            <a href="#test">Test</a>
         </nav>
     </header>
 
     <section id="intro">
-        <h2>Введение</h2>
-        <p>Добро пожаловать в курс по основам веб-разработки! Здесь вы узнаете HTML, CSS и JavaScript.</p>
+        <h2>Wprowadzenie</h2>
+        <p>Witaj na kursie podstaw tworzenia stron internetowych! Dowiesz się tutaj:</p>
+        <ul>
+            <li>HTML – struktury stron internetowych.</li>
+            <li>CSS – stylizacji i wyglądu.</li>
+            <li>JavaScript – interaktywności.</li>
+        </ul>
+        <p>Kurs jest przeznaczony dla początkujących, bez wcześniejszej wiedzy.</p>
     </section>
 
     <section id="html">
-        <h2>HTML</h2>
-        <p>HTML (HyperText Markup Language) – основа структуры веб-страниц...</p>
+        <h2>HTML: Struktura strony</h2>
+        <p>HTML (HyperText Markup Language) to język znaczników do tworzenia stron internetowych. Używa znaczników, na przykład:</p>
+        <pre>
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <title>Moja strona</title>
+</head>
+<body>
+    <h1>Witaj, świecie!</h1>
+</body>
+</html>
+        </pre>
+        <p>Podstawowe znaczniki: `<h1>` dla nagłówków, `<p>` dla akapitów, `<a>` dla linków.</p>
     </section>
 
-    <!-- Аналогично для CSS, JS, примера, упражнения и теста -->
+    <section id="css">
+        <h2>CSS: Stylizacja</h2>
+        <p>CSS (Cascading Style Sheets) odpowiada za wygląd strony. Przykład:</p>
+        <pre>
+h1 {
+    color: navy;
+    font-size: 24px;
+}
+        </pre>
+        <p>Podłączanie CSS: przez `<link rel="stylesheet" href="styles.css">`.</p>
+    </section>
+
+    <section id="js">
+        <h2>JavaScript: Interaktywność</h2>
+        <p>JavaScript dodaje interaktywność. Przykład:</p>
+        <pre>
+function powitanie() {
+    alert("Witaj!");
+}
+        </pre>
+        <p>Służy do manipulacji DOM, obsługi zdarzeń i wiele więcej.</p>
+    </section>
+
+    <section id="test">
+        <h2>Test: Sprawdź swoją wiedzę</h2>
+        <form id="quizForm" onsubmit="checkAnswers(event)">
+            <h3>1. Co oznacza skrót HTML?</h3>
+            <label><input type="radio" name="q1" value="a"> a) HyperText Markup Language</label><br>
+            <label><input type="radio" name="q1" value="b"> b) HighText Machine Language</label><br>
+            <label><input type="radio" name="q1" value="c"> c) HyperTool Markup Language</label><br>
+            <label><input type="radio" name="q1" value="d"> d) HomeText Markup Language</label><br>
+
+            <h3>2. Który znacznik tworzy nagłówek?</h3>
+            <label><input type="radio" name="q2" value="a"> a) <p></label><br>
+            <label><input type="radio" name="q2" value="b"> b) <h1></label><br>
+            <label><input type="radio" name="q2" value="c"> c) <div></label><br>
+            <label><input type="radio" name="q2" value="d"> d) <span></label><br>
+
+            <h3>3. Jak podłączyć zewnętrzny plik CSS?</h3>
+            <label><input type="radio" name="q3" value="a"> a) <style src="styles.css"></label><br>
+            <label><input type="radio" name="q3" value="b"> b) <link rel="stylesheet" href="styles.css"></label><br>
+            <label><input type="radio" name="q3" value="c"> c) <css href="styles.css"></label><br>
+            <label><input type="radio" name="q3" value="d"> d) <script src="styles.css"></label><br>
+
+            <h3>4. Co robi funkcja alert() w JavaScript?</h3>
+            <label><input type="radio" name="q4" value="a"> a) Zmienia kolor tekstu</label><br>
+            <label><input type="radio" name="q4" value="b"> b) Wyświetla okno z komunikatem</label><br>
+            <label><input type="radio" name="q4" value="c"> c) Dodaje nowy element HTML</label><br>
+            <label><input type="radio" name="q4" value="d"> d) Usuwa element ze strony</label><br>
+
+            <h3>5. Który selektor stylizuje element z klasą "intro"?</h3>
+            <label><input type="radio" name="q5" value="a"> a) #intro</label><br>
+            <label><input type="radio" name="q5" value="b"> b) .intro</label><br>
+            <label><input type="radio" name="q5" value="c"> c) intro</label><br>
+            <label><input type="radio" name="q5" value="d"> d) <intro></label><br>
+
+            <h3>6. Co robi właściwość margin w CSS?</h3>
+            <label><input type="radio" name="q6" value="a"> a) Zmienia kolor tekstu</label><br>
+            <label><input type="radio" name="q6" value="b"> b) Ustawia zewnętrzne odstępy</label><br>
+            <label><input type="radio" name="q6" value="c"> c) Dodaje wewnętrzne odstępy</label><br>
+            <label><input type="radio" name="q6" value="d"> d) Zmienia czcionkę</label><br>
+
+            <h3>7. Jak zadeklarować zmienną w JavaScript?</h3>
+            <label><input type="radio" name="q7" value="a"> a) variable x = 10</label><br>
+            <label><input type="radio" name="q7" value="b"> b) let x = 10</label><br>
+            <label><input type="radio" name="q7" value="c"> c) x = 10</label><br>
+            <label><input type="radio" name="q7" value="d"> d) const x = 10</label><br>
+
+            <h3>8. Co robi document.getElementById()?</h3>
+            <label><input type="radio" name="q8" value="a"> a) Tworzy nowy element</label><br>
+            <label><input type="radio" name="q8" value="b"> b) Znajduje element po ID</label><br>
+            <label><input type="radio" name="q8" value="c"> c) Zmienia styl</label><br>
+            <label><input type="radio" name="q8" value="d"> d) Usuwa element</label><br>
+
+            <h3>9. Który znacznik służy do listy nieuporządkowanej?</h3>
+            <label><input type="radio" name="q9" value="a"> a) <ol></label><br>
+            <label><input type="radio" name="q9" value="b"> b) <ul></label><br>
+            <label><input type="radio" name="q9" value="c"> c) <li></label><br>
+            <label><input type="radio" name="q9" value="d"> d) <dl></label><br>
+
+            <h3>10. Co się stanie przy użyciu :hover w CSS?</h3>
+            <label><input type="radio" name="q10" value="a"> a) Styl zmieni się po kliknięciu</label><br>
+            <label><input type="radio" name="q10" value="b"> b) Styl zmieni się po najechaniu myszą</label><br>
+            <label><input type="radio" name="q10" value="c"> c) Styl zmieni się po załadowaniu</label><br>
+            <label><input type="radio" name="q10" value="d"> d) Styl się nie zmieni</label><br>
+
+            <button type="submit">Sprawdź odpowiedzi</button>
+        </form>
+        <div id="result"></div>
+    </section>
 
     <footer>
-        <p>© 2025, Автор: [Ваше имя]. Код доступен на <a href="https://github.com/[ваш_пользователь]/Course">GitHub</a>.</p>
+        <p>© Vistula 2025, Autor: Vladyslav Harbuz. Kod dostępny na <a href="https://github.com/al4dushek/Course">GitHub</a>.</p>
     </footer>
 
-    <script src="/assets/script.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
