@@ -27,7 +27,7 @@ function checkAnswers(event) {
     const resultDiv = document.getElementById('result');
     resultDiv.innerHTML = `
     <p>Twój wynik: ${score} z ${totalQuestions}. ${score >= 7 ? 'Świetnie!' : 'Spróbuj jeszcze raz!'}</p>
-    <button class="reload-btn">Wróć na główną stronę <i class="fas fa-home"></i></button>
+    <button class="return-btn">Wróć na główną stronę <i class="fas fa-home"></i></button>
 `;
 }
 
