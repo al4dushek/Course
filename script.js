@@ -1,3 +1,6 @@
+// document.addEventListener('DOMContentLoaded', function () {
+//     console.log('DOM w pełni załadowany, skrypt działa.');
+
 window.goToMain = function () {
     console.log('Przeładowanie strony – powrót na główną.');
     location.reload();
