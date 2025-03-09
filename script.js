@@ -37,6 +37,5 @@ function showTestOnly() {
             section.style.display = 'block';
         }
     });
-    // Przewiń do sekcji testu
     document.getElementById('test').scrollIntoView({ behavior: 'smooth' });
 }
