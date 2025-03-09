@@ -2,16 +2,16 @@ function checkAnswers(event) {
     event.preventDefault();
 
     const correctAnswers = {
-        q1: 'a',
-        q2: 'b',
-        q3: 'b',
-        q4: 'b',
-        q5: 'b',
-        q6: 'b',
-        q7: 'b',
-        q8: 'b',
-        q9: 'b',
-        q10: 'b'
+        q1: 'c', // Poprawna odpowiedź: HyperText Markup Language
+        q2: 'd', // Poprawna odpowiedź: <h1>
+        q3: 'd', // Poprawna odpowiedź: <link rel="stylesheet" href="styles.css">
+        q4: 'c', // Poprawna odpowiedź: Wyświetla okno z komunikatem
+        q5: 'd', // Poprawna odpowiedź: .intro
+        q6: 'c', // Poprawna odpowiedź: Ustawia zewnętrzne odstępy
+        q7: 'd', // Poprawna odpowiedź: let x = 10
+        q8: 'd', // Poprawna odpowiedź: Znajduje element po ID
+        q9: 'd', // Poprawna odpowiedź: <ul>
+        q10: 'd' // Poprawna odpowiedź: Styl zmieni się po najechaniu myszą
     };
 
     let score = 0;
