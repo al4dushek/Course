@@ -138,7 +138,7 @@ input[type="radio"] {
     display: flex;
     align-items: center;
     gap: 5px;
-    margin: 30px auto; /* Zwiększony margines dla większego odstępu */
+    margin: 30px auto;
 }
 
 .jump-btn:hover {
