@@ -27,3 +27,16 @@ function checkAnswers(event) {
     const resultDiv = document.getElementById('result');
     resultDiv.innerHTML = `Twój wynik: ${score} z ${totalQuestions}. ${score >= 7 ? 'Świetnie!' : 'Spróbuj jeszcze raz!'}`;
 }
+
+function showTestOnly() {
+    const sections = document.querySelectorAll('section');
+    sections.forEach(section => {
+        if (section.id !== 'test') {
+            section.style.display = 'none';
+        } else {
+            section.style.display = 'block';
+        }
+    });
+    // Przewiń do sekcji testu
+    document.getElementById('test').scrollIntoView({ behavior: 'smooth' });
+}
