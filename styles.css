@@ -39,6 +39,7 @@ section {
     background: white;
     border-radius: 10px;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    display: block; /* Upewniamy się, że sekcje są widoczne domyślnie */
 }
 
 section h2 {
@@ -118,10 +119,30 @@ input[type="radio"] {
     display: flex;
     align-items: center;
     gap: 5px;
+    margin-top: 20px;
 }
 
 .submit-btn:hover {
     background: #27ae60;
+}
+
+.jump-btn {
+    background: #3498db;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background 0.3s;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin: 20px 0;
+}
+
+.jump-btn:hover {
+    background: #2980b9;
 }
 
 #result {
@@ -166,5 +187,9 @@ footer a:hover {
     }
     .question {
         padding: 10px;
+    }
+    .jump-btn, .submit-btn {
+        width: 100%;
+        text-align: center;
     }
 }
