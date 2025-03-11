@@ -24,7 +24,7 @@ function checkAnswers(event) {
     };
 
     let score = 0;
-    const totalQuestions = 10;
+    const totalQuestions = 15;
 
     for (let i = 1; i <= totalQuestions; i++) {
         const selectedAnswer = document.querySelector(`input[name="q${i}"]:checked`);
