@@ -24,7 +24,7 @@ function checkAnswers(event) {
     };
 
     let score = 0;
-    const totalQuestions = 15;
+    const totalQuestions = document.querySelectorAll('.question').length;
 
     for (let i = 1; i <= totalQuestions; i++) {
         const selectedAnswer = document.querySelector(`input[name="q${i}"]:checked`);
@@ -45,7 +45,7 @@ function checkAnswers(event) {
                 goToMain();
             });
         } else {
-            console.error('Przycisk .return-btn nie został znaleziony po dynamicznym dodaniu!');
+            console.error('Przycisk .return-btn nie został znaleziony.');
         }
 }
 
