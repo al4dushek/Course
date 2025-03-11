@@ -16,8 +16,8 @@ function checkAnswers(event) {
         q8: 'd',  // Znajduje element po ID
         q9: 'c',  // <ul>
         q10: 'a',  // Styl zmieni się po najechaniu myszą
-        q11: '',
-        q12: '',
+        q11: 'b',
+        q12: 'a',
         q13: '',
         q14: '',
         q15: ''
