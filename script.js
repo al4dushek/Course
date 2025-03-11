@@ -15,7 +15,12 @@ function checkAnswers(event) {
         q7: 'a',  // let x = 10
         q8: 'd',  // Znajduje element po ID
         q9: 'c',  // <ul>
-        q10: 'a'  // Styl zmieni się po najechaniu myszą
+        q10: 'a',  // Styl zmieni się po najechaniu myszą
+        q11: '',
+        q12: '',
+        q13: '',
+        q14: '',
+        q15: ''
     };
 
     let score = 0;
