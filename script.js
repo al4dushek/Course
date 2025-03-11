@@ -6,21 +6,21 @@ function checkAnswers(event) {
     event.preventDefault();
 
     const correctAnswers = {
-        q1: 'd',  // HyperText Markup Language
-        q2: 'a',  // <h1>
-        q3: 'b',  // <link rel="stylesheet" href="styles.css">
-        q4: 'c',  // Wyświetla okno z komunikatem
-        q5: 'd',  // .intro
-        q6: 'b',  // Ustawia zewnętrzne odstępy
-        q7: 'a',  // let x = 10
-        q8: 'd',  // Znajduje element po ID
-        q9: 'c',  // <ul>
-        q10: 'a',  // Styl zmieni się po najechaniu myszą
+        q1: 'd',
+        q2: 'a',
+        q3: 'b',
+        q4: 'c',
+        q5: 'd',
+        q6: 'b',
+        q7: 'a',
+        q8: 'd',
+        q9: 'c',
+        q10: 'a',
         q11: 'b',
         q12: 'a',
-        q13: '',
-        q14: '',
-        q15: ''
+        q13: 'b',
+        q14: 'd',
+        q15: 'b'
     };
 
     let score = 0;
